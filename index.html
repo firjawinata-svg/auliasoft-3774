@@ -1,0 +1,1285 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AuliaSoft POS — Sistem Kasir Digital Modern</title>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Custom -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+
+    <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+      <img src="foto/auliasoftsoftware.png" alt="Logo AuliaSoft" width="34" />
+      <span>Aulia<span style="color:var(--terra)">Soft</span> POS</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Beranda</a></li>
+        <li class="nav-item"><a href="#product" class="nav-link">Keunggulan</a></li>
+        <li class="nav-item"><a href="#fitur" class="nav-link">Fitur</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero-layout">
+
+      <!-- Kiri -->
+      <div class="hero-left">
+        <div class="hero-kicker">
+          <i class="bi bi-lightning-charge-fill"></i> Platform Kasir Terpadu
+        </div>
+
+        <h1>
+          Bisnis Lebih <span class="accent">Efisien</span><br>
+          dengan Kasir Digital Andal
+        </h1>
+
+        <p class="hero-sub">
+          Tangani setiap transaksi, kendalikan stok secara otomatis, dan
+          dapatkan laporan bisnis kapan saja — dalam satu platform yang menyatu.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#product" class="btn btn-terra px-4 py-2">Jelajahi Fitur</a>
+          <a href="#pricing" class="btn btn-outline-white px-4 py-2">Paket Harga</a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div>
+            <div class="hero-stat-num">3<span class="hero-stat-accent">+</span></div>
+            <div class="hero-stat-label">Pilihan Paket Usaha</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">Hybrid</div>
+            <div class="hero-stat-label">Online & Offline</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">18<span class="hero-stat-accent">+</span></div>
+            <div class="hero-stat-label">Bulan Dukungan Teknis</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">UMKM</div>
+            <div class="hero-stat-label">Semua Skala Bisnis</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kanan: Slider -->
+      <div class="hero-right">
+        <div class="hero-slider">
+          <div id="heroCarousel"
+               class="carousel slide carousel-fade"
+               data-bs-ride="carousel"
+               data-bs-interval="3500"
+               data-bs-pause="false">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="foto/hero1.png" class="d-block w-100" alt="Tampilan POS 1">
+              </div>
+              <div class="carousel-item">
+                <img src="foto/hero2.png" class="d-block w-100" alt="Tampilan POS 2">
+              </div>
+              <div class="carousel-item">
+                <img src="foto/hero3.png" class="d-block w-100" alt="Tampilan POS 3">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button"
+              data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button"
+              data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-layout">
+
+      <!-- Kiri: visual tiles -->
+      <div class="about-visual">
+        <div class="about-tile tall">
+          <div class="about-tile-icon">🏪</div>
+          <div class="about-tile-label">Ritel & Minimarket</div>
+          <div class="about-tile-sub">Toko fisik & modern trade</div>
+        </div>
+        <div class="about-tile">
+          <div class="about-tile-icon">🍽️</div>
+          <div class="about-tile-label">F&B</div>
+          <div class="about-tile-sub">Warung & Restoran</div>
+        </div>
+        <div class="about-tile">
+          <div class="about-tile-icon">🏦</div>
+          <div class="about-tile-label">Koperasi</div>
+          <div class="about-tile-sub">BMT & KSPPS</div>
+        </div>
+        <div class="about-tile">
+          <div class="about-tile-icon">📈</div>
+          <div class="about-tile-label">UMKM</div>
+          <div class="about-tile-sub">Skala kecil hingga besar</div>
+        </div>
+      </div>
+
+      <!-- Kanan: teks -->
+      <div class="about-text">
+        <div class="section-label">Tentang Kami</div>
+        <h2 class="section-title-lg">
+          Satu Ekosistem Digital untuk Bisnis yang Terus Tumbuh
+        </h2>
+        <p>
+          AuliaSoft POS hadir sebagai solusi kasir hybrid — beroperasi
+          penuh secara offline maupun tersinkronisasi ke cloud. Dibangun
+          khusus bagi pelaku UMKM dan individu yang ingin mengelola bisnis
+          dengan cara yang lebih teratur dan produktif.
+        </p>
+        <p>
+          Mulai dari pencatatan transaksi harian, pemantauan stok barang,
+          hingga laporan keuangan usaha — semuanya tersedia dalam sistem
+          ringan yang mudah dipahami siapa pun.
+        </p>
+        <a href="detail.html" class="btn btn-navy px-4 py-2 mt-3">
+          Pelajari Lebih Lanjut <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROBLEM ===== -->
+<section id="problem" class="problem-section section-pad">
+  <div class="container">
+
+    <div class="text-center mb-2" style="max-width:680px;margin:auto;">
+      <div class="section-label justify-content-center">Tantangan Bisnis</div>
+      <h2 class="section-title-lg">
+        Hambatan Nyata Saat Usaha Masih Dikelola Manual
+      </h2>
+      <p class="section-desc mx-auto mt-3">
+        Banyak pemilik usaha menghadapi masalah serupa — akibat ketergantungan
+        pada pencatatan manual tanpa dukungan sistem digital yang memadai.
+      </p>
+    </div>
+
+    <div class="prob-numbered-grid">
+
+      <div class="prob-item">
+        <div class="prob-num">01</div>
+        <div>
+          <h5>Transaksi Mudah Terlewat</h5>
+          <p>
+            Data penjualan tersebar di catatan terpisah, sulit ditelusuri,
+            dan rentan kehilangan saat dibutuhkan untuk evaluasi performa.
+          </p>
+        </div>
+      </div>
+
+      <div class="prob-item">
+        <div class="prob-num">02</div>
+        <div>
+          <h5>Stok Tidak Terpantau</h5>
+          <p>
+            Barang habis mendadak tanpa peringatan, atau jumlah stok
+            tidak sesuai catatan karena nihilnya pemantauan secara langsung.
+          </p>
+        </div>
+      </div>
+
+      <div class="prob-item">
+        <div class="prob-num">03</div>
+        <div>
+          <h5>Rekapitulasi Memakan Waktu</h5>
+          <p>
+            Menghitung omzet harian dan menyusun laporan secara manual
+            menguras energi yang seharusnya dipakai untuk mengembangkan bisnis.
+          </p>
+        </div>
+      </div>
+
+      <div class="prob-item">
+        <div class="prob-num">04</div>
+        <div>
+          <h5>Pengawasan Karyawan Terbatas</h5>
+          <p>
+            Aktivitas kasir dan transaksi pegawai sulit dimonitor,
+            sehingga potensi selisih kas atau kelalaian pencatatan meningkat.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SOLUTION ===== -->
+<section id="solution" class="solution-section section-pad">
+  <div class="container">
+
+    <div class="text-center mb-2">
+      <div class="section-label justify-content-center">Solusi Kami</div>
+      <h2 class="section-title-lg">
+        AuliaSoft POS Menyederhanakan Segalanya
+      </h2>
+      <p class="section-desc mx-auto mt-3" style="color:rgba(255,255,255,0.5);">
+        Sistem terintegrasi yang menangani transaksi, stok, dan laporan bisnis
+        sekaligus — lebih cepat, lebih akurat, lebih mudah.
+      </p>
+    </div>
+
+    <div class="sol-grid">
+
+      <!-- Kiri: checklist rows -->
+      <div>
+        <div class="sol-row">
+          <div class="sol-icon"><i class="bi bi-lightning-charge"></i></div>
+          <div>
+            <h5>Transaksi Berjalan Kilat</h5>
+            <p>Proses penjualan selesai cepat dan otomatis tercatat tanpa kerumitan tambahan.</p>
+          </div>
+        </div>
+        <div class="sol-row">
+          <div class="sol-icon"><i class="bi bi-bar-chart-line"></i></div>
+          <div>
+            <h5>Stok Terpantau Seketika</h5>
+            <p>Keluar-masuk barang langsung diperbarui dan bisa dicek kapan pun dibutuhkan.</p>
+          </div>
+        </div>
+        <div class="sol-row">
+          <div class="sol-icon"><i class="bi bi-file-earmark-bar-graph"></i></div>
+          <div>
+            <h5>Laporan Siap Otomatis</h5>
+            <p>Data omzet dan performa usaha tersedia tanpa harus direkap secara manual.</p>
+          </div>
+        </div>
+        <div class="sol-row">
+          <div class="sol-icon"><i class="bi bi-grid-1x2"></i></div>
+          <div>
+            <h5>Satu Dashboard Terpusat</h5>
+            <p>Seluruh data bisnis dirangkum dalam satu tampilan yang rapi dan intuitif.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kanan: CTA Aside -->
+      <div class="sol-aside">
+        <div class="sol-aside-badge"><i class="bi bi-stars"></i> Efisiensi Maksimal</div>
+        <h3>Lebih Cepat, Rapi, dan Menguntungkan</h3>
+        <p>
+          Ganti cara kerja manual dengan sistem kasir digital — bebaskan waktu
+          Anda dari rutinitas operasional dan fokuslah pada pertumbuhan bisnis.
+        </p>
+        <a href="#fitur" class="btn btn-terra w-100 py-2 mb-3">Lihat Semua Fitur</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PRODUCT ===== -->
+<section id="product" class="product-section section-pad">
+  <div class="container">
+
+    <div class="text-center mb-4">
+      <div class="section-label justify-content-center">Keunggulan Produk</div>
+      <h2 class="section-title-lg">Mengapa Memilih AuliaSoft POS?</h2>
+      <p class="section-desc mx-auto mt-3">
+        Sistem kasir modern yang dirancang mendukung berbagai jenis usaha
+        secara efisien, andal, dan fleksibel.
+      </p>
+    </div>
+
+    <div class="product-intro-banner">
+      <div>
+        <h3>Satu Platform, Seluruh Kebutuhan Bisnis Tercakup</h3>
+        <p>Dari kasir hingga laporan, dari stok hingga manajemen karyawan — semua dalam satu dashboard.</p>
+      </div>
+      <div class="flex-shrink-0">
+        <a href="#pricing" class="btn btn-terra px-4 py-2">Lihat Paket</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-shop"></i></div>
+          <h5>Cocok Berbagai Jenis Usaha</h5>
+          <p>Toko retail, UMKM, warung makan, minimarket, hingga jasa — semua dapat dikelola.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-receipt"></i></div>
+          <h5>Antarmuka Kasir Sederhana</h5>
+          <p>Tampilan yang responsif dan intuitif untuk memudahkan operasional kasir setiap harinya.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-box-seam"></i></div>
+          <h5>Kontrol Inventaris Otomatis</h5>
+          <p>Persediaan barang dipantau secara akurat untuk mencegah kehabisan stok yang tak terduga.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <h5>Laporan Usaha Terstruktur</h5>
+          <p>Data omzet, laba rugi, dan tren penjualan terangkum otomatis dan bisa diakses kapan pun.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-wifi-off"></i></div>
+          <h5>Stabil Meski Tanpa Internet</h5>
+          <p>Mode hybrid memastikan operasional tetap berjalan lancar saat koneksi internet terputus.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-shield-check"></i></div>
+          <h5>Keamanan Data Terjamin</h5>
+          <p>Seluruh riwayat transaksi tersimpan aman dan dapat diakses kembali kapan pun diperlukan.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-grid"></i></div>
+          <h5>Dashboard Terintegrasi</h5>
+          <p>Semua fitur krusial terpusat dalam satu tampilan untuk kerja yang lebih terstruktur.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-tag"></i></div>
+          <h5>Harga yang Bersahabat</h5>
+          <p>Paket fleksibel dengan biaya yang dapat disesuaikan — dari usaha rintisan hingga berkembang.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="pk-card">
+          <div class="pk-icon"><i class="bi bi-headset"></i></div>
+          <h5>Dukungan Teknis Responsif</h5>
+          <p>Tim support siap mendampingi setiap saat agar operasional bisnis Anda tidak pernah berhenti.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing" class="pricing-section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <div class="section-label justify-content-center">Paket Harga</div>
+      <h2 class="section-title-lg">Bandingkan & Pilih yang Paling Sesuai</h2>
+      <p class="section-desc mx-auto mt-3">Investasi tepat untuk operasional yang lebih efisien dan terukur</p>
+    </div>
+
+    <div class="pricing-table">
+
+      <!-- HEADER -->
+      <div class="pricing-row header-row">
+        <div class="plan-header-cell">
+          <div style="color:rgba(255,255,255,0.35); font-size:0.8rem; font-weight:600;">Fitur</div>
+        </div>
+
+        <!-- UMKM (HIGHLIGHT) -->
+        <div class="plan-header-cell featured">
+          <div class="plan-name">UMKM</div>
+          <div class="plan-price featured-price">Rp 50.000</div>
+          <div class="plan-period">/bulan</div>
+          <div class="plan-desc">Solusi hemat untuk usaha mikro</div>
+        </div>
+
+        <!-- BASIC -->
+        <div class="plan-header-cell">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">Rp 149.999</div>
+          <div class="plan-period">/bulan</div>
+          <div class="plan-desc">Langkah awal digitalisasi usaha kecil</div>
+        </div>
+
+        <!-- STANDARD (HIGHLIGHT) -->
+        <div class="plan-header-cell featured">
+          <div class="plan-name">Standard</div>
+          <div class="plan-price featured-price">Rp 349.999</div>
+          <div class="plan-period">/bulan</div>
+          <div class="plan-desc">Solusi terlengkap untuk bisnis yang tumbuh</div>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="plan-header-cell">
+          <div class="plan-name">Premium</div>
+          <div class="plan-price">Rp 749.999</div>
+          <div class="plan-period">/bulan</div>
+          <div class="plan-desc">Paket penuh skala operasional besar</div>
+        </div>
+      </div>
+
+      <!-- ROWS -->
+      <div class="pricing-row">
+        <div class="pricing-cell label-cell">Jumlah Outlet</div>
+        <div class="pricing-cell">Single</div>
+        <div class="pricing-cell">Single</div>
+        <div class="pricing-cell">Multi</div>
+        <div class="pricing-cell">Multi</div>
+      </div>
+
+      <div class="pricing-row alt-row">
+        <div class="pricing-cell label-cell">Toko Online</div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <div class="pricing-row">
+        <div class="pricing-cell label-cell">Fitur Kasir</div>
+        <div class="pricing-cell">Online</div>
+        <div class="pricing-cell">Online</div>
+        <div class="pricing-cell">Advanced</div>
+        <div class="pricing-cell">Advanced</div>
+      </div>
+
+      <div class="pricing-row alt-row">
+        <div class="pricing-cell label-cell">Manajemen Stok</div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <div class="pricing-row">
+        <div class="pricing-cell label-cell">Laporan Usaha</div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <div class="pricing-row alt-row">
+        <div class="pricing-cell label-cell">CRM Pelanggan</div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <div class="pricing-row">
+        <div class="pricing-cell label-cell">Akuntansi</div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <div class="pricing-row alt-row">
+        <div class="pricing-cell label-cell">Inventory + COGS</div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <div class="pricing-row">
+        <div class="pricing-cell label-cell">Omnichannel</div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <div class="pricing-row alt-row">
+        <div class="pricing-cell label-cell">Payroll Karyawan</div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <div class="pricing-row">
+        <div class="pricing-cell label-cell">Integrasi Perbankan</div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-x-lg check-no"></i></div>
+        <div class="pricing-cell"><i class="bi bi-check-lg check-yes"></i></div>
+      </div>
+
+      <!-- CTA -->
+      <div class="plan-cta-row">
+        <div class="plan-cta-cell">Mulai Sekarang</div>
+
+        <div class="plan-cta-cell">
+          <a href="#" class="btn btn-terra">Pilih UMKM</a>
+        </div>
+
+        <div class="plan-cta-cell">
+          <a href="#" class="btn btn-outline-terra">Pilih Basic</a>
+        </div>
+
+        <div class="plan-cta-cell">
+          <a href="#" class="btn btn-terra">Pilih Standard</a>
+        </div>
+
+        <div class="plan-cta-cell">
+          <a href="#" class="btn btn-navy">Pilih Premium</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FITUR ===== -->
+<section id="fitur" class="feature-section section-pad">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <div class="section-label justify-content-center">Fitur Utama</div>
+      <h2 class="section-title-lg">Fitur Inti untuk Operasional Bisnis</h2>
+      <p class="section-desc mx-auto mt-3">
+        Tiga fitur utama yang membantu Anda mengelola bisnis dengan lebih mudah, cepat, dan terintegrasi.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- PENJUALAN -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="foto/penjualan.png" alt="Penjualan">
+          <h5>Penjualan</h5>
+          <p>
+            Proses transaksi kasir yang cepat dan efisien, dilengkapi pencatatan otomatis
+            dan integrasi pembayaran digital.
+          </p>
+        </div>
+      </div>
+
+      <!-- PEMBELIAN -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="foto/pembelian.png" alt="Pembelian">
+          <h5>Pembelian</h5>
+          <p>
+            Kelola pembelian dari supplier secara terstruktur, termasuk pencatatan barang masuk
+            dan pengaruhnya terhadap stok.
+          </p>
+        </div>
+      </div>
+
+      <!-- LAPORAN BIAYA -->
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="foto/laporan biaya.png" alt="Laporan Biaya">
+          <h5>Laporan Biaya</h5>
+          <p>
+            Pantau pengeluaran bisnis secara real-time untuk membantu mengontrol
+            biaya operasional dan meningkatkan efisiensi.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+!-- ===== DETAIL HERO ===== -->
+<div class="detail-hero">
+  <div class="container">
+    <div class="section-label" style="color:#f5957a;">
+      <span style="background:#f5957a;"></span>Detail Produk
+    </div>
+    <h1>Kenali Lebih Dalam Ekosistem AuliaSoft</h1>
+    <p>
+      Temukan seluruh aspek produk — dari segmen bisnis yang dilayani,
+      alur kerja sistem, roadmap inovasi, hingga keunggulan kompetitif yang membedakan kami.
+    </p>
+    <div class="detail-nav-pills">
+      <a href="#business-domain">Bidang Usaha</a>
+      <a href="#use-cases">Use Cases</a>
+      <a href="#product-roadmap">Roadmap</a>
+      <a href="#customization">Kustomisasi</a>
+      <a href="#competitors">Kompetitor</a>
+      <a href="#complementary">Ekosistem</a>
+      <a href="#processes">Alur & Kebijakan</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== BUSINESS DOMAIN ===== -->
+<section id="business-domain" class="section-pad">
+  <div class="container">
+
+    <div class="detail-section-title text-center">
+      <div class="section-label justify-content-center">Bidang Usaha</div>
+      <h2>Business Domain</h2>
+      <p>Segmen industri dan jenis bisnis yang dilayani dalam ekosistem AuliaSoft.</p>
+    </div>
+
+    <div class="content-panel">
+
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="domain-card">
+            <i class="bi bi-shop"></i>
+            <h5>Retail & Toko Modern</h5>
+            <p>
+              AuliaSoft melayani beragam jenis toko ritel — mulai dari toko kelontong,
+              minimarket, toko pakaian, frozen food, counter HP, hingga usaha dagang
+              eceran lainnya yang membutuhkan sistem kasir terintegrasi.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="domain-card">
+            <i class="bi bi-cup-hot"></i>
+            <h5>Kuliner & F&B</h5>
+            <p>
+              Mendukung operasional warung makan, kafe, restoran, cloud kitchen,
+              dan usaha makanan lainnya — dilengkapi fitur pesanan, stok bahan baku,
+              serta laporan penjualan harian yang terstruktur.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="domain-card">
+            <i class="bi bi-bank"></i>
+            <h5>Koperasi & Lembaga Keuangan</h5>
+            <p>
+              Menyediakan solusi digital untuk koperasi simpan pinjam, koperasi karyawan,
+              BMT, KSPPS, dan lembaga keuangan mikro — dengan sistem akuntansi
+              dan transaksi yang saling terintegrasi penuh.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="domain-card">
+            <i class="bi bi-building"></i>
+            <h5>UMKM & Perusahaan</h5>
+            <p>
+              Ideal bagi pelaku UMKM, bisnis yang sedang berkembang, maupun perusahaan
+              yang memerlukan pengelolaan operasional dan keuangan yang lebih
+              terstruktur, efisien, dan berskala.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="note-bar mt-5 text-center">
+        <p>
+          Secara luas, AuliaSoft bergerak di bidang
+          <strong>Business Software, Sistem POS, ERP ringan, dan Digitalisasi Operasional Bisnis</strong>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== USE CASES ===== -->
+<section id="use-cases" class="section-pad" style="background:var(--cream2);">
+  <div class="container">
+
+    <div class="detail-section-title text-center">
+      <div class="section-label justify-content-center">Skenario Penggunaan</div>
+      <h2>Use Cases</h2>
+      <p>Bagaimana AuliaSoft POS diaplikasikan dalam aktivitas operasional bisnis sehari-hari.</p>
+    </div>
+
+    <div class="content-panel">
+
+      <div class="usecase-image-box">
+        <img src="foto/usecasepos.png" alt="Diagram Use Case AuliaSoft POS">
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="usecase-block" style="border-radius:14px;">
+            <h5><i class="bi bi-shop"></i> Operasional Toko & Kasir</h5>
+            <p>
+              Sistem ini menyatukan operasional toko fisik dan layanan e-commerce
+              dalam satu platform yang terintegrasi. Kasir menangani penjualan
+              pelanggan sekaligus mencatat pembelian stok barang secara bersamaan.
+            </p>
+            <p>
+              Setiap transaksi terhubung langsung ke sistem pembayaran — memungkinkan
+              kasir memproses tunai, QRIS, hingga kartu kredit sebagai opsi tambahan.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="usecase-block" style="border-radius:14px;">
+            <h5><i class="bi bi-person-gear"></i> Administrasi & Manajemen</h5>
+            <p>
+              Di level manajemen, admin memiliki kendali penuh atas pengaturan sistem
+              dan data pendukung operasional — mulai dari akun pengguna, data karyawan,
+              hingga hak akses di setiap tingkatan aplikasi.
+            </p>
+            <p>
+              Admin juga mengelola konfigurasi pembayaran, modul CRM, dan program
+              loyalitas guna meningkatkan retensi pelanggan secara jangka panjang.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="usecase-block" style="border-radius:14px;">
+            <h5><i class="bi bi-bar-chart-line"></i> Pemilik & Pengawasan Bisnis</h5>
+            <p>
+              Pemilik usaha fokus pada strategi dan evaluasi performa. Tanggung jawabnya
+              mencakup pengelolaan data supplier, informasi produk inti, serta
+              pemantauan perkembangan usaha secara berkala.
+            </p>
+            <p>
+              Laporan transaksi yang tersedia otomatis membantu pemilik menganalisis
+              kondisi bisnis dan mengambil keputusan berbasis data yang lebih tepat.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCT ROADMAP ===== -->
+<section id="product-roadmap" class="section-pad">
+  <div class="container">
+
+    <!-- SECTION TITLE -->
+    <div class="detail-section-title text-center mb-5">
+      <div class="section-label">Rencana Pengembangan</div>
+      <h2>Product Roadmap</h2>
+      <p>Perjalanan pengembangan fitur Aulia e-POS dari tahap dasar hingga solusi bisnis yang lebih canggih.</p>
+    </div>
+
+    <!-- ROADMAP VERSION -->
+    <div class="row g-4 mb-5">
+
+      <!-- BASIC -->
+      <div class="col-md-4">
+        <div class="roadmap-card h-100 text-center">
+          <span class="roadmap-dot"></span>
+          <h5>Versi Basic</h5>
+          <p>
+            Fondasi awal digitalisasi kasir untuk UMKM, berfokus pada pencatatan transaksi
+            dan pengelolaan stok sederhana.
+          </p>
+          <ul class="list-unstyled">
+            <li>Single outlet</li>
+            <li>Kasir online</li>
+            <li>Inventori dasar</li>
+            <li>Laporan penjualan sederhana</li>
+            <li>Pembayaran QRIS</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- STANDARD -->
+      <div class="col-md-4">
+        <div class="roadmap-card h-100 text-center active">
+          <span class="roadmap-dot highlight"></span>
+          <h5>Versi Standar</h5>
+          <p>
+            Solusi lanjutan untuk bisnis yang berkembang dengan kebutuhan pengelolaan
+            multi outlet dan sistem operasional yang lebih terstruktur.
+          </p>
+          <ul class="list-unstyled">
+            <li>Multi outlet & toko online</li>
+            <li>Kasir (multi-satuan & pengaturan meja)</li>
+            <li>Manajemen stok (COGS, produksi, transfer)</li>
+            <li>CRM & deposit pelanggan</li>
+            <li>Laporan analitik bisnis</li>
+            <li>Manajemen SDM</li>
+            <li>Akuntansi (faktur, CoA, auto posting)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="col-md-4">
+        <div class="roadmap-card h-100 text-center">
+          <span class="roadmap-dot"></span>
+          <h5>Versi Premium</h5>
+          <p>
+            Solusi lengkap untuk bisnis dengan kebutuhan otomatisasi penuh,
+            integrasi omnichannel, dan pengelolaan operasional tingkat lanjut.
+          </p>
+          <ul class="list-unstyled">
+            <li>Omnichannel (Marketplace, Web, GrabMart)</li>
+            <li>Kasir lanjutan (reservasi, komisi, grosir)</li>
+            <li>Inventori tingkat lanjut</li>
+            <li>Payroll otomatis</li>
+            <li>Akuntansi lengkap</li>
+            <li>Sistem Aulia Teams</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+      <!-- NOTE -->
+      <div class="note-bar text-center mt-5">
+        <p>
+          Fokus utama pengembangan AuliaSoft adalah
+          <strong>otomatisasi, integrasi sistem, mobilitas pengguna, dan pertumbuhan bisnis berkelanjutan.</strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CUSTOMIZATION ===== -->
+<section id="customization" class="section-pad" style="background:var(--cream2);">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="detail-section-title text-center">
+      <div class="section-label justify-content-center">Fleksibilitas Sistem</div>
+      <h2>Customization (Personalisasi)</h2>
+      <p>
+        AuliaSoft menghadirkan fleksibilitas tinggi untuk menyesuaikan sistem dengan kebutuhan unik setiap bisnis.
+      </p>
+    </div>
+
+    <div class="content-panel">
+
+      <!-- PARAGRAF UTAMA -->
+      <div class="info-block text-center">
+        <p>
+          AuliaSoft menyediakan kemampuan kustomisasi yang luas untuk berbagai jenis usaha,
+          mulai dari retail, toko bangunan, klinik, hingga bisnis jasa. Sistem ini memungkinkan
+          penyesuaian pada struktur data, kategori produk, serta alur operasional sesuai karakteristik bisnis.
+        </p>
+        <p>
+          Dengan fleksibilitas ini, setiap pengguna dapat mengatur sistem agar benar-benar selaras
+          dengan kebutuhan bisnisnya, tanpa harus mengikuti sistem yang kaku atau terbatas.
+        </p>
+        <p>
+          Hasilnya adalah sistem yang lebih efisien, mudah digunakan, dan mampu mendukung pertumbuhan
+          bisnis secara optimal dalam jangka panjang.
+        </p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="text-center mt-5">
+        <img src="foto/Coz.avif" 
+             alt="Customization AuliaSoft"
+             class="img-fluid rounded-4 shadow-sm">
+      </div>
+
+      <!-- NOTE -->
+      <div class="note-bar text-center mt-5">
+        <p>
+          AuliaSoft dirancang untuk mengikuti kebutuhan bisnis Anda — memberikan kebebasan dalam kustomisasi
+          tanpa mengorbankan kemudahan penggunaan.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPETITORS ===== -->
+<section id="competitors" class="section-pad">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="detail-section-title text-center">
+      <div class="section-label justify-content-center">Peta Persaingan</div>
+      <h2>Competitors</h2>
+      <p>
+        AuliaSoft bersaing di pasar software kasir, koperasi, retail,
+        dan sistem usaha berbasis desktop maupun cloud.
+      </p>
+    </div>
+
+    <div class="content-panel">
+
+      <!-- INTRO -->
+      <div class="info-block mb-4 text-center">
+        <h4>Lanskap Kompetitor AuliaSoft POS</h4>
+        <p>
+          AuliaSoft hadir di tengah persaingan berbagai solusi software bisnis,
+          mulai dari POS berbasis cloud hingga sistem desktop, dengan pendekatan
+          yang lebih fleksibel dan menyeluruh.
+        </p>
+      </div>
+
+      <!-- POSITIONING PARAGRAPH -->
+      <div class="info-block text-center">
+        <p>
+          Di tengah ketatnya persaingan aplikasi POS berbasis langganan seperti Moka POS dan Majoo,
+          AuliaSoft hadir sebagai alternatif yang lebih efisien dengan menawarkan skema biaya yang
+          lebih terjangkau tanpa ketergantungan pada langganan bulanan yang tinggi.
+        </p>
+        <p>
+          AuliaSoft menonjol melalui kekuatan ekosistem serta kolaborasi strategis yang telah dibangun.
+          Berbeda dengan banyak kompetitor yang cenderung berdiri sendiri, AuliaSoft telah menjalin kerja sama
+          dengan berbagai ekosistem digital, termasuk lembaga resmi seperti Kementerian Koperasi dan UKM.
+        </p>
+        <p>
+          Kemitraan ini menunjukkan bahwa AuliaSoft memiliki standar integrasi sistem dan keamanan
+          yang diakui secara luas. Dengan pendekatan biaya yang lebih efisien, AuliaSoft memberikan nilai tambah
+          melalui legalitas perusahaan yang kuat, dukungan teknis resmi, serta validasi dari mitra strategis nasional.
+        </p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="text-center mt-5">
+        <img src="foto/competitors.avif" alt="Competitors AuliaSoft"
+             class="img-fluid rounded-4 shadow-sm">
+      </div>
+
+      <!-- NOTE -->
+      <div class="note-bar text-center mt-5">
+        <p>
+          Keunggulan utama AuliaSoft terletak pada sistem hybrid (offline + online),
+          ragam produk yang luas, serta fleksibilitas kustomisasi sesuai kebutuhan bisnis.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPLEMENTARY ===== -->
+<section id="complementary" class="section-pad" style="background:var(--cream2);">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="detail-section-title text-center">
+      <div class="section-label justify-content-center">Ekosistem Pendukung</div>
+      <h2>Complementary Product</h2>
+      <p>
+        AuliaSoft menghadirkan ekosistem produk digital yang saling terintegrasi
+        untuk mendukung operasional bisnis secara menyeluruh dan efisien.
+      </p>
+    </div>
+
+    <div class="content-panel">
+
+      <!-- PARAGRAF UTAMA -->
+      <div class="info-block text-center">
+        <p>
+          AuliaSoft tidak hanya menyediakan aplikasi kasir, tetapi juga membangun
+          ekosistem digital yang terhubung dalam satu platform terpadu. Integrasi ini
+          mencakup sistem kasir online, toko digital, manajemen inventori, hingga
+          dashboard pemantauan bisnis yang dapat diakses secara real-time.
+        </p>
+        <p>
+          Dengan menggunakan seluruh rangkaian produk secara bersamaan, pelaku usaha
+          dapat mengelola transaksi offline dan online dalam satu sistem yang sinkron.
+          Hal ini memastikan data penjualan dan stok tetap akurat di semua channel
+          tanpa perlu menggunakan berbagai software dari vendor yang berbeda.
+        </p>
+        <p>
+          Pendekatan ini memberikan efisiensi operasional, kemudahan pengelolaan,
+          serta skalabilitas bagi bisnis untuk berkembang lebih cepat dalam era digital.
+        </p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="text-center mt-5">
+        <img src="foto/Complementary.avif" 
+             alt="Complementary Product AuliaSoft"
+             class="img-fluid rounded-4 shadow-sm">
+      </div>
+
+      <!-- NOTE -->
+      <div class="note-bar text-center mt-5">
+        <p>
+          Ekosistem terintegrasi menjadi keunggulan utama AuliaSoft dalam membantu bisnis
+          berkembang dengan sistem yang lebih efisien, terpusat, dan mudah digunakan.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="faq-section section-pad">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <div class="section-label justify-content-center">FAQ</div>
+      <h2 class="section-title-lg">Pertanyaan yang Sering Diajukan</h2>
+      <p class="section-desc mx-auto mt-3" style="color:rgba(255,255,255,0.45);">Hal-hal yang ingin Anda ketahui sebelum memulai</p>
+    </div>
+
+    <div class="accordion faq-accordion" id="faqAccordion" style="max-width:760px;margin:auto;">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faq1">
+            Apakah AuliaSoft POS bisa dioperasikan tanpa internet?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Ya, sistem dapat beroperasi secara offline penuh. Data akan tersinkronisasi secara otomatis begitu koneksi internet kembali tersedia.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faq2">
+            Apakah input data dilakukan secara manual?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Ya, data dimasukkan secara manual agar pemilik bisnis memiliki kendali penuh atas setiap informasi yang tersimpan dalam sistem.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faq3">
+            Apakah sistem ini kompatibel untuk berbagai jenis usaha?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Tentu. AuliaSoft POS dirancang fleksibel sehingga sesuai untuk toko retail, warung makan, restoran, koperasi, jasa servis, dan berbagai jenis usaha lainnya.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faq4">
+            Bagaimana cara melakukan pembayaran langganan?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Pembayaran bisa dilakukan via transfer tunai maupun transfer ke rekening BRI 789001005408534 atas nama PT MITRA AULIA INDONESIA.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== TESTIMONI ===== -->
+<section id="testimoni" class="testimonial-section">
+  <div class="container text-center">
+
+    <div class="mb-5">
+      <div class="section-label justify-content-center">Testimoni</div>
+      <h2 class="section-title-lg">Dipercaya Ribuan Pelaku Usaha</h2>
+      <p class="section-desc mx-auto mt-3">Cerita nyata dari para pengguna aktif AuliaSoft POS</p>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="foto/koppontrenalfatah.png" alt="Koppontren Al Fatah">
+            <div class="stars">★★★★★</div>
+            <h5>Koppontren Al Fatah</h5>
+            <p>Peralihan dari pencatatan manual ke sistem digital ini sangat terasa manfaatnya. Fitur yang lengkap dan dukungan teknis yang cepat membuat operasional kami jauh lebih lancar.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="foto/koperasisss.png" alt="Koperasi SSS">
+            <div class="stars">★★★★★</div>
+            <h5>Koperasi Sahabat Syariah Sejahtera</h5>
+            <p>Laporan keuangan kini jauh lebih terstruktur dan proses kerja harian menjadi lebih efisien sejak kami menggunakan AuliaSoft.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="foto/tokonazrilbns.png" alt="Toko Nazril BNS">
+            <div class="stars">★★★★★</div>
+            <h5>Toko Nazril BNS</h5>
+            <p>Sangat membantu aktivitas toko sehari-hari. Tim support selalu responsif dan sigap menjawab setiap kebutuhan kami.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="foto/cvlapkes.png" alt="CV Lapkes">
+            <div class="stars">★★★★★</div>
+            <h5>CV LAPKES MART KKSU SYARIAH</h5>
+            <p>Pengelolaan stok dan pelaporan penjualan kini dapat dilakukan dengan mudah, cepat, dan hasilnya jauh lebih akurat.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="foto/tokorahmin.png" alt="Toko Rahmi">
+            <div class="stars">★★★★★</div>
+            <h5>Toko Rahmi</h5>
+            <p>Sistem ini membantu meningkatkan transparansi dan tata kelola toko kami secara keseluruhan dengan cara yang mudah.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="foto/kkmp.png" alt="KKMP Cengkareng">
+            <div class="stars">★★★★★</div>
+            <h5>KKMP Cengkareng Barat</h5>
+            <p>Aplikasi yang kaya fitur dengan layanan dukungan yang sangat memuaskan. Kami tidak menyesal memilih AuliaSoft.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <img src="foto/kkmpbojong.png" alt="KKMP Bojong">
+            <div class="stars">★★★★★</div>
+            <h5>KKMP Bojong Nangka</h5>
+            <p>Sangat mudah dioperasikan dan telah terintegrasi sempurna dengan sistem POS yang sudah kami gunakan sebelumnya.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <div class="contact-inner">
+      <div>
+        <span class="tag-pill mb-3 d-inline-flex" style="background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.2);">
+          <i class="bi bi-rocket-takeoff"></i> Mulai Sekarang
+        </span>
+        <h2>Siap Membawa Bisnis ke Level Berikutnya?</h2>
+        <p class="contact-desc mt-3 mb-4">
+          Gunakan AuliaSoft POS untuk mengelola transaksi, stok, dan laporan bisnis
+          dengan lebih cepat, akurat, dan efisien dari sebelumnya.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="https://pos.auliasoft.com/business/register" class="btn btn-white px-4 py-2">
+            <i class="bi bi-play-circle me-1"></i> Coba Gratis Sekarang
+          </a>
+          <a href="https://wa.me/6281241945881?text=Saya%20ingin%20bertanya%20mengenai%20Aplikasi%20POS%20Auliasoft"
+             target="_blank" class="btn btn-outline-white px-4 py-2">
+            <i class="bi bi-whatsapp me-1"></i> Hubungi Tim Kami
+          </a>
+        </div>
+      </div>
+      <div class="contact-side">
+        <div class="contact-info-line">
+          <i class="bi bi-envelope-fill"></i>
+          <span>info.awlia@gmail.com</span>
+        </div>
+        <div class="contact-info-line">
+          <i class="bi bi-whatsapp"></i>
+          <span>+62 812-4194-5881</span>
+        </div>
+        <div class="contact-info-line">
+          <i class="bi bi-bank"></i>
+          <span>BRI 789001005408534</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p class="mb-0">© 2026 AuliaSoft POS — PT Mitra Aulia Indonesia</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    autoplay: { delay: 3000, disableOnInteraction: false },
+    speed: 900,
+    pagination: { el: ".swiper-pagination", clickable: true },
+    breakpoints: {
+      768: { slidesPerView: 2, spaceBetween: 20 },
+      1024: { slidesPerView: 3, spaceBetween: 24 }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
